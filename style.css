@@ -1,0 +1,195 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: beige;
+}
+
+.inicio {
+    display: flex;
+    height: 100vh;
+}
+
+.foto{
+    flex: 1;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto img{
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.infos {
+    flex: 2;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infos h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.infos h2{
+    font-size: 24px;
+    color: gray;
+    margin-top: 10px;
+}
+
+.infos p{
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.social{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    margin-top: 1.4rem;
+}
+
+.social a {
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    color: gray;
+    border: 1.6px solid gray;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    padding: 0.39rem;
+    text-align: center;
+}
+
+.social a:hover {
+    color: #444;
+    background-color: gray;
+}
+
+footer{
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p{
+    margin: 0;
+    font-family: "Libre Baskerville", serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sobre {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: beige;
+    padding: 60px 80px;
+    gap: 40px;
+}
+
+.sobre-mim p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 90%;
+    text-align: justify;
+}
+
+.linha {
+    width: wrap;
+    height: 4px;
+    background-color: black;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+.linha-fina {
+    width: wrap;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 2px;
+}
+
+.sobre-mim, .skills {
+    flex: 1;
+    min-width: 300px;
+}
+
+.sobre-mim h2, .skills h2{
+    font-size: 32px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.skills h3{
+    font-size: 22px;
+    color: gray;
+    margin-bottom: 8px;
+}
+
+.skills ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills li{
+    font-size: 18px;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.skills li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: black;
+}
+
+.experiencias {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: gray;
+    padding: 60px 80px;
+    gap: 40px
+}
+
+.formacao, .experiencia {
+    flex: 1;
+    min-width: 300px;
+}
+
+.formacao h2, .experiencia h2 {
+    font-size: 32px;
+    color: black;
+    margin-bottom: 10px
+}
+
+.item {
+    margin-bottom: 30px;
+}
+
+.data {
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+}
+
+.item h3 {
+    margin: 5px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.item p {
+    margin: 0;
+    font-size: 16px;
+    color: #444;
+}
