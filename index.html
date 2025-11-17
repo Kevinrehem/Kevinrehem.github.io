@@ -4,16 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin Rehem</title>
+    <meta name="description" content="Portfólio de Kevin Rehem - Estagiário em IA e Desenvolvedor Full Stack.">
+    <title>Kevin Rehem | Dev & IA</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .github-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .github-stats img {
+            max-width: 100%;
+            height: auto;
+        }
+        .projetos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .projeto-card {
+            background: #f4f4f4; /* Ajuste conforme seu tema escuro/claro */
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .projeto-card:hover {
+            transform: translateY(-5px);
+        }
+        .projeto-card h3 a {
+            text-decoration: none;
+            color: #333;
+        }
+        .projeto-tags {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        .next-steps ul {
+            list-style: none;
+            padding: 0;
+        }
+        .next-steps li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .next-steps li::before {
+            content: "🚀";
+            position: absolute;
+            left: 0;
+        }
+    </style>
 </head>
 
 <body>
 
     <div class="inicio">
         <div class="foto">
-            <img src="Images/foto.png" alt="Foto" height="246">
+            <img src="Images/foto.png" alt="Foto de Kevin Ávila Rehem" height="246">
         </div>
         <div class="infos">
             <h1>Kevin Ávila Rehem</h1>
@@ -23,8 +78,9 @@
             <p><strong>Email:</strong> kevin.rehem@gmail.com</p>
             <p><strong>Endereço:</strong> Ouro Branco, MG</p>
             <div class="social">
-                <a href="https://www.linkedin.com/in/kevin-ávila-rehem-1781301a5"><i class="bx bxl-linkedin"></i></a>
-                <a href="https://github.com/Kevinrehem"><i class="bx bxl-github"></i></a>
+                <a href="https://www.linkedin.com/in/kevin-ávila-rehem-1781301a5" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/Kevinrehem" target="_blank"><i class="bx bxl-github"></i></a>
+                <a href="mailto:kevin.rehem@gmail.com"><i class="bx bx-envelope"></i></a>
             </div>
         </div>
     </div>
@@ -34,96 +90,155 @@
             <h2>Sobre mim</h2>
             <div class="linha"></div>
             <p>
-                Com um foco em desenvolvimento de software e paixão por tecnologias modernas,
-                busco constantemente aprimorar minhas habilidades e aplicá-las em projetos
-                desafiadores. Tenho experiência com o ecossistema de desenvolvimento web,
-                utilizando tecnologias como Spring Boot para a construção de APIs robustas
-                e Next.js para a criação de interfaces de usuário dinâmicas e responsivas.<br /><br />
+                Olá! Sou um entusiasta de tecnologia e "criador de mundos", tanto na ficção quanto no código. 
+                Como estudante de Sistemas de Informação no IFMG, estou constantemente em uma <em>quest</em> para 
+                aprimorar minhas habilidades. <strong>Atualmente, aplico e expando esses conhecimentos como 
+                estagiário de IA na OK Inteligência Artificial.</strong><br><br>
 
-                Acredito que a colaboração é a chave para o sucesso de qualquer projeto.
-                Tive a oportunidade de demonstrar e aprimorar minha capacidade de trabalho
-                em equipe em projetos como o "quiz-show-asilo" e o "esof1-project". Nessas
-                ocasiões, atuei em conjunto com outros desenvolvedores, contribuindo para a
-                entrega de soluções de software de alta qualidade, sempre com foco em comunicação
-                clara, metodologias ágeis e aprendizado contínuo.
+                Acredito que os melhores resultados vêm da colaboração e da criatividade. Meus projetos recentes 
+                são exemplos da minha paixão por unir lógica de back-end robusta com experiências de usuário interativas.
             </p>
+            
+            <div class="github-stats">
+                <img src="https://github-readme-stats.vercel.app/api?username=Kevinrehem&show_icons=true&theme=dracula&include_all_commits=true&count_private=true" alt="GitHub Stats">
+                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kevinrehem&layout=compact&langs_count=7&theme=dracula" alt="Top Languages">
+            </div>
         </div>
+
         <div class="skills">
             <h2>Habilidades</h2>
             <div class="linha"></div>
             <ul>
-            <li><h3>Linguagens</h3>
-            <div class="linha-fina"></div>
-            <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white"
-                alt="Java">
-            <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"
-                alt="C++">
-            <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"
-                alt="TypeScript">
-            <img src="https://img.shields.io/badge/Assembly-6E4C13?style=for-the-badge&logo=assembly&logoColor=white"
-                alt="Assembly"></li>
+                <li>
+                    <h3>Linguagens</h3>
+                    <div class="linha-fina"></div>
+                    <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" alt="Java">
+                    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+                    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+                    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+                    <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
+                    <img src="https://img.shields.io/badge/Assembly-6E4C13?style=for-the-badge&logo=assembly&logoColor=white" alt="Assembly">
+                </li>
 
-            <li><h3>Databases</h3>
-                <div class="linha-fina"></div>
-            <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"
-                alt="MySQL">
-            <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"
-                alt="PostgreSQL"></li>
+                <li>
+                    <h3>Databases</h3>
+                    <div class="linha-fina"></div>
+                    <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+                    <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+                </li>
 
-            <li><h3>Frameworks</h3>
-            <div class="linha-fina"></div>
-            <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white"
-                alt="Spring Boot">
-            <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white"
-                alt="Next.js"></li>
+                <li>
+                    <h3>Frameworks & Libs</h3>
+                    <div class="linha-fina"></div>
+                    <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" alt="Spring Boot">
+                    <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
+                    <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js">
+                    <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite">
+                </li>
 
-            <li><h3>Tools</h3>
-            <div class="linha-fina"></div>
-            <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
-            <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"
-                alt="GitHub"></li>
+                <li>
+                    <h3>Tools</h3>
+                    <div class="linha-fina"></div>
+                    <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+                    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+                    <img src="https://img.shields.io/badge/N8N-1A1A1A?style=for-the-badge&logo=n8n&logoColor=white" alt="N8N">
+                </li>
             </ul>
+        </div>
+    </div>
+
+    <div class="experiencias" style="margin-bottom: 0;">
+        <div class="projetos-container" style="padding: 0 20px;">
+            <h2>Projetos em Destaque</h2>
+            <div class="linha"></div>
             
+            <div class="projetos-grid">
+                <div class="projeto-card">
+                    <h3><a href="https://github.com/Kevinrehem/GCMEE_-_Gerenciador_e_Controlador_de_Manutencao_em_Equipamentos_Eletronicos" target="_blank">GCMEE <i class='bx bx-link-external'></i></a></h3>
+                    <p>Gerenciador de ordens de serviço (O.S.) para equipamentos eletrônicos.</p>
+                    <div class="projeto-tags">
+                        <small>Spring Boot</small> | <small>React</small> | <small>PostgreSQL</small>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <h3><a href="https://github.com/allysson-assuncao/quiz-show-asilo" target="_blank">Quiz Show Asilo <i class='bx bx-link-external'></i></a></h3>
+                    <p>Um jogo de quiz interativo (estilo "Show do Milhão") adaptado para idosos.</p>
+                    <div class="projeto-tags">
+                        <small>React</small> | <small>Vite</small> | <small>TypeScript</small>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <h3><a href="https://github.com/Kevinrehem/VideoProcessing" target="_blank">VideoProcessing <i class='bx bx-link-external'></i></a></h3>
+                    <p>Estudo sobre processamento paralelo para tratamento e correção de dados em vídeos.</p>
+                    <div class="projeto-tags">
+                        <small>Java</small>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <h3><a href="https://github.com/allysson-assuncao/esof1-project" target="_blank">esof1-project <i class='bx bx-link-external'></i></a></h3>
+                    <p>Projeto focado na prática de métodos de desenvolvimento ágil.</p>
+                    <div class="projeto-tags">
+                        <small>TypeScript</small> | <small>Java</small>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="experiencias">
         <div class="formacao">
             <h2>Formação</h2>
-            <div class="linha"></div><div class="item">
-                    <span class="data">2014 - 2016</span>
-                    <h3>Ensino Médio</h3>
-                    <p>Colégio e Curso Galileu</p>
-                </div>
-                <div class="item">
-                    <span class="data">2017 - Interrompido</span>
-                    <h3>Bacharelado em Engenharia Mecatrônica</h3>
-                    <p>Universidade Federal de São João Del-Rei (UFSJ)</p>
-                </div>
-                <div class="item">
-                    <span class="data">2024 - Atual</span>
-                    <h3>Bacharelado em Sistemas de Informação</h3>
-                    <p>Instituto Federal de Minas Gerais (IFMG)</p>
-                </div>
-        </div>
-        <div class="experiencia">
-            <h2>Experiencia Profissional</h2>
             <div class="linha"></div>
-                <div class="item">
-                    <span class="data">Set/2021 - Ago/2023</span>
-                    <h3>Estagiário de Tecnologia da Informação</h3>
-                    <p>Siemens Healthineers</p>
-                </div>
-                <div class="item">
-                    <span class="data">Out/2024 - Ago/2025</span>
-                    <h3>Auxiliar de Escritório</h3>
-                    <p>Contabilidade Moderna</p>
-                </div>
-                <div class="item">
-                    <span class="data">Set/2025 - Atual</span>
-                    <h3>Estagiário em Inteligência Artificial</h3>
-                    <p>OK Inteligência Artificial</p>
-                </div>
+            <div class="item">
+                <span class="data">2014 - 2016</span>
+                <h3>Ensino Médio</h3>
+                <p>Colégio e Curso Galileu</p>
+            </div>
+            <div class="item">
+                <span class="data">2017 - Interrompido</span>
+                <h3>Bacharelado em Engenharia Mecatrônica</h3>
+                <p>Universidade Federal de São João Del-Rei (UFSJ)</p>
+            </div>
+            <div class="item">
+                <span class="data">2024 - Atual</span>
+                <h3>Bacharelado em Sistemas de Informação</h3>
+                <p>Instituto Federal de Minas Gerais (IFMG)</p>
+            </div>
+            
+            <div class="next-steps" style="margin-top: 30px;">
+                <h2>Próximos Passos (Foco Atual)</h2>
+                <div class="linha"></div>
+                <p>Meu foco atual é aprofundar conhecimentos na criação de soluções inteligentes:</p>
+                <ul>
+                    <li><strong>Integração com LLMs:</strong> Sistemas de atendimento automatizados.</li>
+                    <li><strong>N8N:</strong> Ferramenta de automação e workflow.</li>
+                    <li><strong>Docker:</strong> Orquestração de serviços em containers.</li>
+                    <li><strong>Python:</strong> Linguagem principal para scripts e integrações.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="experiencia">
+            <h2>Experiência Profissional</h2>
+            <div class="linha"></div>
+            <div class="item">
+                <span class="data">Set/2025 - Atual</span>
+                <h3>Estagiário em Inteligência Artificial</h3>
+                <p>OK Inteligência Artificial</p>
+            </div>
+            <div class="item">
+                <span class="data">Out/2024 - Ago/2025</span>
+                <h3>Auxiliar de Escritório</h3>
+                <p>Contabilidade Moderna</p>
+            </div>
+            <div class="item">
+                <span class="data">Set/2021 - Ago/2023</span>
+                <h3>Estagiário de Tecnologia da Informação</h3>
+                <p>Siemens Healthineers</p>
+            </div>
         </div>
     </div>
 
