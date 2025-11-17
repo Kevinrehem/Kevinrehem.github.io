@@ -193,3 +193,73 @@ footer p{
     font-size: 16px;
     color: #444;
 }
+
+/* ========================================= */
+/* NOTACÕES DE RESPONSIVIDADE       */
+/* ========================================= */
+
+/* Para tablets e celulares em modo paisagem (telas até 768px) */
+@media (max-width: 768px) {
+
+    /* Empilha as seções que antes ficavam lado a lado */
+    .inicio {
+        flex-direction: column;
+        height: auto; /* A altura se ajusta ao conteúdo */
+        text-align: center; /* Centraliza o texto na seção inicial */
+    }
+
+    .foto {
+        /* O padding simula uma margem para a foto não colar no topo */
+        padding-top: 40px;
+    }
+
+    .social {
+        justify-content: center; /* Centraliza os ícones sociais */
+    }
+
+    /* Reduz os espaçamentos (padding) laterais para telas menores */
+    .infos, .sobre, .experiencias {
+        padding: 40px 30px;
+    }
+
+    .sobre-mim p {
+        max-width: 100%; /* Permite que o texto ocupe toda a largura */
+    }
+
+    /* Reduz o tamanho das fontes principais para caber melhor na tela */
+    .infos h1 {
+        font-size: 36px;
+    }
+
+    .sobre-mim h2, .skills h2, .formacao h2, .experiencia h2 {
+        font-size: 28px;
+    }
+}
+
+/* Para celulares em modo retrato (telas até 480px) */
+@media (max-width: 480px) {
+
+    /* Diminui ainda mais os espaçamentos */
+    .infos, .sobre, .experiencias {
+        padding: 30px 20px;
+    }
+
+    .infos h1 {
+        font-size: 32px;
+    }
+
+    .infos h2 {
+        font-size: 20px;
+    }
+
+    .sobre-mim h2, .skills h2, .formacao h2, .experiencia h2 {
+        font-size: 26px;
+    }
+    
+    .infos p, .sobre-mim p, .skills li {
+        font-size: 17px;
+    }
+
+    .foto img{
+        width: 250px; /* Diminui um pouco a foto em telas muito pequenas */
+    }
