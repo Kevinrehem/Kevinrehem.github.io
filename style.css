@@ -109,16 +109,24 @@ footer p {
 
 /* Ajuste das Estatísticas do GitHub */
 .github-stats {
+    /* Coloca o bloco abaixo das skills ocupando a largura total
+       com 40px de margem lateral e 30px de margem inferior */
     display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 25px;
+    gap: 80px;
+    margin: 0 80px 40px; /* top 0, left/right 40px, bottom 30px */
+    width: calc(75% - 80px); /* compensa as margens laterais */
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; /* lado a lado em telas maiores */
 }
 
 .github-stats img {
-    height: 160px; /* Altura fixa para alinhar os cards */
-    width: auto;
-    max-width: 100%; /* Responsividade */
+    /* Cada card ocupa metade da largura do container em telas grandes */
+    width: 50%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 .linha {
@@ -151,6 +159,19 @@ footer p {
     margin-bottom: 10px;
 }
 
+/* Torna o título dentro de .github-stats igual aos demais h2 */
+.github-header h2 {
+    font-size: 32px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.github-header {
+    padding: 5px 80px
+}
+
+
+
 .skills h3 {
     font-size: 22px;
     color: gray;
@@ -181,7 +202,9 @@ footer p {
 /* Reaproveitando o estilo de container da seção .sobre para manter consistência */
 .projetos-container {
     background-color: beige; /* Mantém o fundo bege */
-    padding: 0 80px 60px 80px; /* Padding ajustado */
+    padding: 0 40px 60px 40px; /* Padding ajustado (reduzido para encaixar melhor em 80% width) */
+    width: 80%; /* Ocupa 80% da largura da tela */
+    margin: 0 auto; /* Centraliza o container */
 }
 
 .projetos-container h2 {
@@ -371,6 +394,8 @@ footer p {
     /* Ajuste para as estatísticas em telas menores */
     .github-stats {
         justify-content: center;
+        flex-direction: column; /* empilha os cards em telas menores */
+        flex-wrap: wrap;
     }
     
     .github-stats img {
