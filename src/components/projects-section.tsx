@@ -19,7 +19,7 @@ const academicProjects = [
         tags: ["Event-Driven", "Tempo Real", "Saúde"],
       },
       {
-        name: 'Capacitação em IA',
+        name: 'Projeto de Extensão "Mão Na Aula"',
         date: "Abril/2026",
         description:
           "Elaboração de proposta de extensão e plano de ensino para instruir professores da rede pública no uso de ferramentas de Inteligência Artificial Generativa.",
@@ -33,11 +33,25 @@ const academicProjects = [
         tags: ["Inclusão Digital", "Gerenciamento", "IFMG"],
       },
       {
-        name: "Modelagem e Banco de Dados",
+        name: "Sistemas Operacionais & Concorrência",
         date: "",
         description:
-          "Experiência prática com design, administração e engenharia reversa utilizando PostgreSQL.",
-        tags: ["PostgreSQL", "Modelagem", "DBA"],
+          "Simulador de terminal em Java e algoritmos de escalonamento (Round-Robin). Implementação de tratamento de ruído em imagens e vídeos usando processamento paralelo (threads e semáforos).",
+        tags: ["Java", "Multithreading", "Sistemas Operacionais"],
+      },
+      {
+        name: "Engenharia de Software & Arquitetura",
+        date: "",
+        description:
+          "Estudo de ciclo de vida de aplicações aliado aos fundamentos físicos de computadores. Desenvolvimento de um verificador de CNPJ nativo em Assembly (interação de baixo nível).",
+        tags: ["Engenharia de Software", "Arquitetura", "Assembly"],
+      },
+      {
+        name: "Redes & Banco de Dados",
+        date: "",
+        description:
+          "Experiência prática com design, administração e engenharia reversa utilizando PostgreSQL, além dos fundamentos essenciais de redes e comunicação de computadores.",
+        tags: ["PostgreSQL", "Redes", "Modelagem"],
       },
     ],
   },
