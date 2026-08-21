@@ -4,23 +4,23 @@
 
 :root {
   --background: #fdf6e3;
-  --foreground: #433422;
+  --foreground: #2a2015;
   --card: #f5eacb;
-  --card-foreground: #433422;
+  --card-foreground: #2a2015;
   --popover: #fdf6e3;
-  --popover-foreground: #433422;
+  --popover-foreground: #2a2015;
   --primary: #9a3412;
   --primary-foreground: #ffffff;
   --secondary: #d9c5a0;
-  --secondary-foreground: #433422;
+  --secondary-foreground: #2a2015;
   --muted: #e8d5b5;
-  --muted-foreground: #7d6340;
+  --muted-foreground: #5c4a30;
   --accent: #f2e8cf;
-  --accent-foreground: #433422;
+  --accent-foreground: #2a2015;
   --destructive: #ef4744;
   --destructive-foreground: #ffffff;
-  --border: #d4b483;
-  --input: #d4b483;
+  --border: #c2a170;
+  --input: #c2a170;
   --ring: #9a3412;
   --chart-1: #a86200;
   --chart-2: #a88093;
