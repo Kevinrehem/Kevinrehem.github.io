@@ -31,15 +31,6 @@ const experiences = [
       "Suporte a infraestrutura de TI e resolução de incidentes técnicos.",
     ],
   },
-  {
-    period: "Fev/2017 – Dez/2023",
-    title: "Engenharia Mecatrônica",
-    company: "UFSJ",
-    description: [
-      "Participação no projeto de extensão CAP Code, focado em maratonas de programação.",
-      "Participação na SEMATRON 2019 com a realização de um workshop focado em desenvolvimento com Arduino.",
-    ],
-  },
 ];
 
 const timelineVariants = {

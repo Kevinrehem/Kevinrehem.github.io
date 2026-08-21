@@ -41,6 +41,26 @@ const academicProjects = [
       },
     ],
   },
+  {
+    title: "Engenharia Mecatrônica — UFSJ",
+    period: "Fev/2017 – Dez/2023",
+    projects: [
+      {
+        name: "Projeto de Extensão CAP Code",
+        date: "",
+        description:
+          "Participação no projeto de extensão CAP Code, focado em maratonas de programação.",
+        tags: ["Programação", "Extensão"],
+      },
+      {
+        name: "SEMATRON 2019",
+        date: "2019",
+        description:
+          "Participação na SEMATRON 2019 com a realização de um workshop focado em desenvolvimento com Arduino.",
+        tags: ["Arduino", "Workshop"],
+      },
+    ],
+  },
 ];
 
 const projectCardVariants = {
