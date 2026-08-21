@@ -114,25 +114,35 @@ export function HeroSection() {
             Construindo soluções robustas com qualidade técnica e visão de negócio
           </motion.p>
 
-          {/* Social Links */}
+          {/* CTA & Social Links */}
           <motion.div
             variants={itemVariants}
-            className="flex items-center justify-center md:justify-start gap-3"
+            className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4"
           >
-            {socialLinks.map((link) => (
-              <motion.a
-                key={link.label}
-                href={link.href}
-                target={link.href.startsWith("mailto") ? undefined : "_blank"}
-                rel="noopener noreferrer"
-                className="p-3 rounded-xl bg-card border border-border text-muted-foreground hover:text-primary hover:border-primary/50 hover:shadow-md transition-all duration-300"
-                whileHover={{ scale: 1.1, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-                aria-label={link.label}
-              >
-                <link.icon size={20} />
-              </motion.a>
-            ))}
+            <a 
+              href="/curriculo.pdf" 
+              download
+              className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-xl hover:bg-primary/90 transition-colors shadow-lg hover:shadow-primary/25"
+            >
+              Baixar Currículo
+            </a>
+
+            <div className="flex items-center gap-3">
+              {socialLinks.map((link) => (
+                <motion.a
+                  key={link.label}
+                  href={link.href}
+                  target={link.href.startsWith("mailto") ? undefined : "_blank"}
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-xl bg-card border border-border text-muted-foreground hover:text-primary hover:border-primary/50 hover:shadow-md transition-all duration-300"
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                  aria-label={link.label}
+                >
+                  <link.icon size={20} />
+                </motion.a>
+              ))}
+            </div>
           </motion.div>
         </div>
       </motion.div>
