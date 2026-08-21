@@ -31,6 +31,15 @@ const experiences = [
       "Suporte a infraestrutura de TI e resolução de incidentes técnicos.",
     ],
   },
+  {
+    period: "Fev/2017 – Dez/2023",
+    title: "Engenharia Mecatrônica",
+    company: "UFSJ",
+    description: [
+      "Participação no projeto de extensão CAP Code, focado em maratonas de programação.",
+      "Participação na SEMATRON 2019 com a realização de um workshop focado em desenvolvimento com Arduino.",
+    ],
+  },
 ];
 
 const timelineVariants = {
@@ -51,7 +60,7 @@ export function ExperienceSection() {
     <SectionWrapper id="experience" className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2 text-center">
-          Experiência Profissional
+          Experiência & Formação
         </h2>
         <div className="w-16 h-1 bg-primary rounded-full mx-auto mb-10" />
 
