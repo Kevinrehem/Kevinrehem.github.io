@@ -4,6 +4,7 @@ import { AboutSection } from "@/components/about-section";
 import { SkillsSection } from "@/components/skills-section";
 import { ExperienceSection } from "@/components/experience-section";
 import { ProjectsSection } from "@/components/projects-section";
+import { GitHubProjectsSection } from "@/components/github-projects-section";
 import { GitHubStatsSection } from "@/components/github-stats-section";
 import { Footer } from "@/components/footer";
 
@@ -17,6 +18,7 @@ export default function Home() {
         <SkillsSection />
         <ExperienceSection />
         <ProjectsSection />
+        <GitHubProjectsSection />
         <GitHubStatsSection />
       </main>
       <Footer />
