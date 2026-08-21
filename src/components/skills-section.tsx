@@ -78,7 +78,7 @@ export function SkillsSection() {
                       <Badge
                         key={skill}
                         variant="secondary"
-                        className="text-xs font-medium hover:bg-primary/10 hover:text-primary transition-colors cursor-default"
+                        className="text-xs font-medium bg-secondary brightness-75 dark:brightness-110 text-white hover:bg-primary/10 hover:text-primary hover:brightness-100 transition-all cursor-default shadow-sm"
                       >
                         {skill}
                       </Badge>

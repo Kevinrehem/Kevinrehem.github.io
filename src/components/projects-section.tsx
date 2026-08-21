@@ -85,70 +85,72 @@ export function ProjectsSection() {
         </h2>
         <div className="w-16 h-1 bg-primary rounded-full mx-auto mb-10" />
 
-        {academicProjects.map((academic) => (
-          <div key={academic.title}>
-            {/* Academic Header */}
-            <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 rounded-lg bg-primary/10 text-primary">
-                <GraduationCap size={24} />
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-foreground">
-                  {academic.title}
-                </h3>
-                <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
-                  <Calendar size={14} />
-                  <span>{academic.period}</span>
+        <div className="space-y-12 md:space-y-16">
+          {academicProjects.map((academic) => (
+            <div key={academic.title}>
+              {/* Academic Header */}
+              <div className="flex items-center gap-3 mb-6">
+                <div className="p-2 rounded-lg bg-primary/10 text-primary">
+                  <GraduationCap size={24} />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground">
+                    {academic.title}
+                  </h3>
+                  <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
+                    <Calendar size={14} />
+                    <span>{academic.period}</span>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {/* Project Cards Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {academic.projects.map((project, i) => (
-                <motion.div
-                  key={project.name}
-                  custom={i}
-                  variants={projectCardVariants}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, margin: "-50px" }}
-                >
-                  <Card className="h-full bg-card border-border hover:border-primary/40 hover:shadow-lg transition-all duration-300 group">
-                    <CardHeader className="pb-2">
-                      <div className="flex items-start justify-between gap-2">
-                        <CardTitle className="text-base font-semibold text-card-foreground group-hover:text-primary transition-colors">
-                          {project.name}
-                        </CardTitle>
-                        {project.date && (
-                          <span className="text-xs text-muted-foreground whitespace-nowrap bg-muted px-2 py-0.5 rounded-md">
-                            {project.date}
-                          </span>
-                        )}
-                      </div>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-sm text-muted-foreground leading-relaxed mb-3">
-                        {project.description}
-                      </p>
-                      <div className="flex flex-wrap gap-1.5">
-                        {project.tags.map((tag) => (
-                          <Badge
-                            key={tag}
-                            variant="outline"
-                            className="text-xs border-primary/30 text-primary/80"
-                          >
-                            {tag}
-                          </Badge>
-                        ))}
-                      </div>
-                    </CardContent>
-                  </Card>
-                </motion.div>
-              ))}
+              {/* Project Cards Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {academic.projects.map((project, i) => (
+                  <motion.div
+                    key={project.name}
+                    custom={i}
+                    variants={projectCardVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, margin: "-50px" }}
+                  >
+                    <Card className="h-full bg-card border-border hover:border-primary/40 hover:shadow-lg transition-all duration-300 group">
+                      <CardHeader className="pb-2">
+                        <div className="flex items-start justify-between gap-2">
+                          <CardTitle className="text-base font-semibold text-card-foreground group-hover:text-primary transition-colors">
+                            {project.name}
+                          </CardTitle>
+                          {project.date && (
+                            <span className="text-xs text-muted-foreground whitespace-nowrap bg-muted px-2 py-0.5 rounded-md">
+                              {project.date}
+                            </span>
+                          )}
+                        </div>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                          {project.description}
+                        </p>
+                        <div className="flex flex-wrap gap-1.5">
+                          {project.tags.map((tag) => (
+                            <Badge
+                              key={tag}
+                              variant="outline"
+                              className="text-xs border-primary/30 text-primary/80"
+                            >
+                              {tag}
+                            </Badge>
+                          ))}
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </motion.div>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </SectionWrapper>
   );
