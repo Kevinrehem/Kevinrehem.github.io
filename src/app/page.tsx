@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/hero-section";
 import { AboutSection } from "@/components/about-section";
 import { SkillsSection } from "@/components/skills-section";
 import { ExperienceSection } from "@/components/experience-section";
+import { FeaturedProjectSection } from "@/components/featured-project-section";
 import { ProjectsSection } from "@/components/projects-section";
 import { GitHubProjectsSection } from "@/components/github-projects-section";
 import { GitHubStatsSection } from "@/components/github-stats-section";
@@ -18,6 +19,7 @@ export default function Home() {
         <AboutSection />
         <SkillsSection />
         <ExperienceSection />
+        <FeaturedProjectSection />
         <ProjectsSection />
         <GitHubProjectsSection />
         <GitHubStatsSection />
