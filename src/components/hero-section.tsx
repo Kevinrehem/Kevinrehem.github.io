@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Mail, ChevronDown } from "lucide-react";
-
+import { HireMeModal } from "./hire-me-modal";
 function LinkedinIcon({ size = 20 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -122,12 +122,18 @@ export function HeroSection() {
             <a 
               href="/curriculo.pdf" 
               download
-              className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-xl hover:bg-primary/90 transition-colors shadow-lg hover:shadow-primary/25"
+              className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-xl hover:bg-primary/90 transition-colors shadow-lg hover:shadow-primary/25 whitespace-nowrap"
             >
               Baixar Currículo
             </a>
 
-            <div className="flex items-center gap-3">
+            <HireMeModal>
+              <button className="px-6 py-3 bg-card border-2 border-primary/50 text-foreground font-semibold rounded-xl hover:bg-primary/10 transition-colors shadow-lg whitespace-nowrap">
+                Faça um Orçamento
+              </button>
+            </HireMeModal>
+
+            <div className="flex items-center gap-3 mt-2 sm:mt-0">
               {socialLinks.map((link) => (
                 <motion.a
                   key={link.label}

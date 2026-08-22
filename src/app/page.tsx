@@ -6,6 +6,7 @@ import { ExperienceSection } from "@/components/experience-section";
 import { ProjectsSection } from "@/components/projects-section";
 import { GitHubProjectsSection } from "@/components/github-projects-section";
 import { GitHubStatsSection } from "@/components/github-stats-section";
+import { CTASection } from "@/components/cta-section";
 import { Footer } from "@/components/footer";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
         <ProjectsSection />
         <GitHubProjectsSection />
         <GitHubStatsSection />
+        <CTASection />
       </main>
       <Footer />
     </>
