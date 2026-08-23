@@ -32,9 +32,9 @@ export function CTASection() {
           </p>
           
           <HireMeModal>
-            <Button size="lg" className="h-14 px-8 text-base font-semibold shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all group rounded-xl">
-              Faça um orçamento sem compromisso
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+            <Button size="lg" className="w-full sm:w-auto h-auto min-h-14 py-3 px-4 sm:px-8 text-sm sm:text-base font-semibold shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all group rounded-xl whitespace-normal text-center">
+              <span>Faça um orçamento sem compromisso</span>
+              <ArrowRight className="ml-2 shrink-0 group-hover:translate-x-1 transition-transform" size={20} />
             </Button>
           </HireMeModal>
         </motion.div>
