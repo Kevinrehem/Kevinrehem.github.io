@@ -55,7 +55,7 @@ export default function ResumePage() {
             </div>
             <div className="flex items-center gap-1.5">
               <LinkedinIcon size={14} />
-              <a href="https://linkedin.com/in/kevin-ávila-rehem-1781301a5" className="hover:text-primary transition-colors">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/kevin-rehem" className="hover:text-primary transition-colors">LinkedIn</a>
             </div>
             <div className="flex items-center gap-1.5">
               <GithubIcon size={14} />

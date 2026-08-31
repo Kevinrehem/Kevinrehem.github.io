@@ -25,7 +25,7 @@ function GithubIcon({ size = 20 }: { size?: number }) {
 
 const socialLinks = [
   {
-    href: "https://www.linkedin.com/in/kevin-ávila-rehem-1781301a5",
+    href: "https://www.linkedin.com/in/kevin-rehem",
     icon: LinkedinIcon,
     label: "LinkedIn",
   },
