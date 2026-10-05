@@ -185,7 +185,7 @@ export default function ResumePage() {
                 <div>
                   <h4 className="text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-1">Cloud & Tools</h4>
                   <div className="flex flex-wrap gap-1.5">
-                    {["Docker", "Git/GitHub", "Linux"].map(s => (
+                    {["Docker", "Git/GitHub", "Linux", "Powershell", "Bash"].map(s => (
                       <span key={s} className="px-2 py-1 bg-neutral-800 border border-neutral-700 rounded text-[11px] text-neutral-200">{s}</span>
                     ))}
                   </div>
